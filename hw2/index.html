@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+    // (в першу, другу, третю или четверту частину години).
+
+    let time = +prompt(' from 0 to 59')
+    if (time <= 15) {
+        console.log(1)
+    }
+    else if (time  <= 30){
+        console.log(2)
+    }
+    else if (time <= 45){
+        console.log(3)
+    }
+    else if (time <=59){
+        console.log(4)
+    }
+
+
+    // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+
+    let day = +prompt('from 1 to 31')
+    if (day <= 15){
+        console.log(1)
+    }
+    else if (day <= 30){
+        console.log(2)
+    }
+    else if (day > 30){
+        console.log(false)
+    }
+
+    // - У нас є змінна test, якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
+    //     Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта - з коротким записом(тернаркою)
+    let test = 'question'
+    if (test === true){
+        console.log('correct')
+    }
+    else {
+        console.log('incorrect')
+    }
+
+
+    let question = +prompt('2+2 ?')
+    if (question === 4){
+        console.log('correct')
+    }
+    else {
+        console.log('incorrect')
+    }
+
+    // - Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+    let a = +prompt('enter number')
+    if (a === 0){
+        console.log('true')
+    }
+    else{
+        console.log('false')
+    }
+
+    // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день.
+    let day1 = +prompt('Enter the day of the week from 1 to 7')
+    switch (day1){
+        case 1:
+            console.log('Monday: Shopping')
+            break;
+        case 2:
+            console.log('Tuesday: Go to the gym')
+            break;
+        case 3:
+            console.log('Wednesday: Go for a walk')
+            break;
+        case 4:
+            console.log('Thursday:  Walk with a dog')
+            break;
+        case 5:
+            console.log('Friday: Spend time with friends')
+            break;
+        case 6:
+            console.log('Saturday: Watch films')
+            break;
+        case 7:
+            console.log('Sunday: Sleep all the day')
+
+    }
+
+    // - Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
+    let year = +prompt('Enter the number of days this year')
+    if (year % 4===0){
+        console.log('a leap year')
+    }
+    else{
+        console.log('not a leap year')
+    }
+
+
+    //   - Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
+    // Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!
+
+    let guestion1 = prompt('What is the "official" name of JavaScript?')
+    if (guestion1 === 'ECMAScript'){
+        console.log('correct')
+    }
+    else {
+        console.log('Don`t know? ECMAScript!')
+    }
+
+</script>
+</body>
+</html>
