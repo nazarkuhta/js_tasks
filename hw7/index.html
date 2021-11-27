@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+
+    // let User = (id, name, surname, email, phone) => {
+    //     this.id = id
+    //     this.name = name
+    //     this.surname = surname
+    //     this.email = email
+    //     this.phone = phone
+    // }
+
+    // створити пустий масив, наповнити його 10 об'єктами new User(....)
+
+    // let userArr = [
+    //     new User(1, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(2, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(3, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(4, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(5, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(6, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(7, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(8, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(9, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135),
+    //     new User(10, 'vasya', 'pupkin', 'vp@asdasd.asd', 2315415125135)
+    // ]
+    // console.log(userArr)
+
+    // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+    //
+    // let filter = userArr.filter((item)=>{
+    //     if (item.id%2===0){
+    //         return item
+    //     }
+    // })
+    // console.log(filter)
+
+
+    // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+
+    // console.log(userArr.sort((a,b)=> a.id - b.id))
+
+    // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+    class Client {
+        constructor(id, name, surname, email, phone, order) {
+            this.id = id
+            this.name = name
+            this.surname = surname
+            this.email = email
+            this.phone = phone
+            this.order = order
+
+        }
+    }
+
+    // створити пустий масив, наповнити його 10 об'єктами Client
+    let clientArr = [
+        new Client(1, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3']),
+        new Client(2, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3']),
+        new Client(3, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3']),
+        new Client(4, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3']),
+        new Client(5, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3']),
+        new Client(6, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3']),
+        new Client(7, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3']),
+        new Client(8, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1', 'item2', 'item3', 'item4']),
+        new Client(9, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, [ 'item2', 'item3']),
+        new Client(10, 'vasya', 'pupkin', 'vs@fsfsf.asd', 3832832838, ['item1',])
+    ]
+
+    // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+
+    console.log(client.sort((a,b)=> a.order.length - b.order.length))
+
+</script>
+</body>
+</html>
