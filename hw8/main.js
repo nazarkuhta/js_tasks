@@ -33,7 +33,7 @@ rules.style.color = `blue`
 
 let fc_rules = document.getElementsByClassName(`fc_rules`)
 for (const fcRule of fc_rules) {
-console.log(fcRule)
+console.log(fcRule.classList)
 }
 
 // -- поміняти колір тексту у всіх елементів fc_rules на червоний
