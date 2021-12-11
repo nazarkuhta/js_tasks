@@ -29,26 +29,26 @@
 // https://jsonplaceholder.typicode.com/comments
 
 
-fetch(`https://jsonplaceholder.typicode.com/comments`).then(response => response.json()).then(comments =>{
-    let wrap = document.createElement(`div`)
-    wrap.classList.add(`wrap`)
-    for (const comment of comments) {
-        let divCom = document.createElement(`div`)
-        divCom.classList.add(`comment`)
-        divCom.innerHTML = `
-        <h2>ID: ${comment.id}<h2/>  
-        <h3>Name: ${comment.name}</h3>
-        <h4>Email: ${comment.email}</h4>
-        <h5>${comment.body}</h5>
-        `
-        wrap.append(divCom)
-        document.body.append(wrap)
-
-
-    }
-
-
-})
+// fetch(`https://jsonplaceholder.typicode.com/comments`).then(response => response.json()).then(comments =>{
+//     let wrap = document.createElement(`div`)
+//     wrap.classList.add(`wrap`)
+//     for (const comment of comments) {
+//         let divCom = document.createElement(`div`)
+//         divCom.classList.add(`comment`)
+//         divCom.innerHTML = `
+//         <h2>ID: ${comment.id}<h2/>
+//         <h3>Name: ${comment.name}</h3>
+//         <h4>Email: ${comment.email}</h4>
+//         <h5>${comment.body}</h5>
+//         `
+//         wrap.append(divCom)
+//         document.body.append(wrap)
+//
+//
+//     }
+//
+//
+// })
 
 
 
